@@ -1,0 +1,13 @@
+mixin exercise-memory-card(template)
+	.exercise-memory(id=template.id, aria-hidden='true')
+		each content in template.cards
+			.card(data-pair=content.key)
+				.front
+				.back(class=content.class)
+					+control-elements(content.cardContent)
+
+		each content in template.pares
+			.card(data-pair=content.key)
+				.front
+				.back(class=content.class)
+					+control-elements(content.cardContent)

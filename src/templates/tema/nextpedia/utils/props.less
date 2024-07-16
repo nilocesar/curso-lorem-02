@@ -1,0 +1,311 @@
+@all: 100;
+@exceptions: 0, 1, 2, 3, 4, 5, 10, 20, 30, 33, 40, 50, 60, 66, 70, 80, 90, 99,
+  100;
+@exceptions_all: length(@exceptions);
+@rem: "rem";
+@vw: "vw";
+@vh: "vh";
+@porc: "%";
+
+.prop-loop(@name, @property, @type, @counter) when (@counter >= 0) {
+  .@{name}@{counter} {
+    @{property}: ~"@{counter}@{type} !important";
+  }
+
+  .prop-loop(@name, @property, @type, @counter - 1);
+}
+
+.prop-tablet-loop(@name, @property, @type, @counter) when (@counter >= 0) {
+  @value: extract(@exceptions, @counter);
+
+  .@{name}@{value} {
+    @media (max-width: @tablet) {
+      @{property}: ~"@{value}@{type} !important";
+    }
+  }
+
+  .prop-tablet-loop(@name, @property, @type, @counter - 1);
+}
+
+.prop-mobile-loop(@name, @property, @type, @counter) when (@counter >= 0) {
+  @value: extract(@exceptions, @counter);
+
+  .@{name}@{value} {
+    @media (max-width: @mobile) {
+      @{property}: ~"@{value}@{type} !important";
+    }
+  }
+
+  .prop-mobile-loop(@name, @property, @type, @counter - 1);
+}
+
+.prop-dec(@name, @property, @counter) when (@counter >= 0) {
+  @value: @counter / 100;
+
+  .@{name}@{counter} {
+    @{property}: ~"@{value} !important";
+  }
+
+  .prop-dec(@name, @property, @counter - 1);
+}
+
+.prop-loop( prop-size , font-size, @rem, @all);
+.prop-loop( prop-p , padding, @rem, @all);
+.prop-loop( prop-pb , padding-bottom, @rem, @all);
+.prop-loop( prop-pt , padding-top, @rem, @all);
+.prop-loop( prop-pl , padding-left, @rem, @all);
+.prop-loop( prop-pr , padding-right, @rem, @all);
+.prop-loop( prop-m , margin, @rem, @all);
+.prop-loop( prop-mb , margin-bottom, @rem, @all);
+.prop-loop( prop-mt , margin-top, @rem, @all);
+.prop-loop( prop-ml , margin-left, @rem, @all);
+.prop-loop( prop-mr , margin-right, @rem, @all);
+.prop-loop( prop-h , height, @rem, @all);
+.prop-loop( prop-w , width, @rem, @all);
+.prop-loop( prop-mah , max-height, @rem, @all);
+.prop-loop( prop-maw , max-width, @rem, @all);
+.prop-loop( prop-mih , min-height, @rem, @all);
+.prop-loop( prop-miw , min-width, @rem, @all);
+
+.prop-loop( prop-size-porc , font-size, @porc, @all);
+.prop-loop( prop-p-porc , padding, @porc, @all);
+.prop-loop( prop-pb-porc , padding-bottom, @porc, @all);
+.prop-loop( prop-pt-porc , padding-top, @porc, @all);
+.prop-loop( prop-pl-porc , padding-left, @porc, @all);
+.prop-loop( prop-pr-porc , padding-right, @porc, @all);
+.prop-loop( prop-m-porc , margin, @porc, @all);
+.prop-loop( prop-mb-porc , margin-bottom, @porc, @all);
+.prop-loop( prop-mt-porc , margin-top, @porc, @all);
+.prop-loop( prop-ml-porc , margin-left, @porc, @all);
+.prop-loop( prop-mr-porc , margin-right, @porc, @all);
+.prop-loop( prop-h-porc , height, @porc, @all);
+.prop-loop( prop-w-porc , width, @porc, @all);
+.prop-loop( prop-mah-porc , max-height, @porc, @all);
+.prop-loop( prop-maw-porc , max-width, @porc, @all);
+.prop-loop( prop-mih-porc , min-height, @porc, @all);
+.prop-loop( prop-miw-porc , min-width, @porc, @all);
+
+.prop-loop( prop-h-vh, height, @vh, @all);
+.prop-loop( prop-w-vw, width, @vw, @all);
+.prop-loop( prop-mah-vh, max-height,@vh, @all);
+.prop-loop( prop-maw-vw, max-width, @vw, @all);
+.prop-loop( prop-mih-vh, min-height,@vh, @all);
+.prop-loop( prop-miw-vw, min-width, @vw, @all);
+
+.prop-tablet-loop( prop-tablet-h , height, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-w , width, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-h-porc , height, @porc, @exceptions_all);
+.prop-tablet-loop( prop-tablet-w-porc , width, @porc, @exceptions_all);
+.prop-tablet-loop( prop-tablet-mah-porc , max-height, @porc, @exceptions_all);
+.prop-tablet-loop( prop-tablet-maw-porc , max-width, @porc, @exceptions_all);
+.prop-tablet-loop( prop-tablet-mih-porc , min-height, @porc, @exceptions_all);
+.prop-tablet-loop( prop-tablet-miw-porc , min-width, @porc, @exceptions_all);
+
+.prop-tablet-loop( prop-tablet-h-vh, height, @vh, @exceptions_all);
+.prop-tablet-loop( prop-tablet-w-vw, width, @vw, @exceptions_all);
+.prop-tablet-loop( prop-tablet-mah-vh, max-height,@vh, @exceptions_all);
+.prop-tablet-loop( prop-tablet-maw-vw, max-width, @vw, @exceptions_all);
+.prop-tablet-loop( prop-tablet-mih-vh, min-height,@vh, @exceptions_all);
+.prop-tablet-loop( prop-tablet-miw-vw, min-width, @vw, @exceptions_all);
+
+.prop-tablet-loop( prop-tablet-p , padding, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-pb , padding-bottom, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-pt , padding-top, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-pl , padding-left, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-pr , padding-right, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-m , margin, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-mb , margin-bottom, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-mt , margin-top, @rem, @exceptions_all);
+.prop-tablet-loop( prop-tablet-ml , margin-left, @rem,@exceptions_all);
+.prop-tablet-loop( prop-tablet-mr , margin-right, @rem, @exceptions_all);
+
+.prop-mobile-loop( prop-mobile-h , height, @rem, @all);
+.prop-mobile-loop( prop-mobile-w , width, @rem, @all);
+.prop-mobile-loop( prop-mobile-h-porc , height, @porc, @exceptions_all);
+.prop-mobile-loop( prop-mobile-w-porc , width, @porc, @exceptions_all);
+
+.prop-mobile-loop( prop-mobile-p , padding, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-pb , padding-bottom, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-pt , padding-top, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-pl , padding-left, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-pr , padding-right, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-m , margin, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-mb , margin-bottom, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-mt , margin-top, @rem, @exceptions_all);
+.prop-mobile-loop( prop-mobile-ml , margin-left, @rem,@exceptions_all);
+.prop-mobile-loop( prop-mobile-mr , margin-right, @rem, @exceptions_all);
+
+.prop-mobile-loop( prop-mobile-h-vh, height, @vh, @exceptions_all);
+.prop-mobile-loop( prop-mobile-w-vw, width, @vw, @exceptions_all);
+.prop-mobile-loop( prop-mobile-mah-vh, max-height,@vh, @exceptions_all);
+.prop-mobile-loop( prop-mobile-maw-vw, max-width, @vw, @exceptions_all);
+.prop-mobile-loop( prop-mobile-mih-vh, min-height,@vh, @exceptions_all);
+.prop-mobile-loop( prop-mobile-miw-vw, min-width, @vw, @exceptions_all);
+
+.prop-dec( prop-opacity , opacity, @all);
+
+.prop-margin-menu {
+  margin-top: @height-menu !important;
+}
+
+.prop-txt-center {
+  text-align: center !important;
+}
+
+.prop-txt-right {
+  text-align: right !important;
+}
+.prop-txt-bold {
+  font-weight: bold !important;
+}
+
+.prop-txt-up {
+  text-transform: uppercase !important;
+}
+
+.prop-center {
+  justify-content: center !important;
+}
+
+.prop-hide,
+.hide {
+  display: none !important;
+}
+
+.prop-color-01 {
+  color: @color-01 !important;
+}
+.prop-color-02 {
+  color: @color-02 !important;
+}
+.prop-color-03 {
+  color: @color-03 !important;
+}
+.prop-color-04 {
+  color: @color-04 !important;
+}
+.prop-color-05 {
+  color: @color-05 !important;
+}
+.prop-color-06 {
+  color: @color-06 !important;
+}
+.prop-color-07 {
+  color: @color-07 !important;
+}
+.prop-color-08 {
+  color: @color-08 !important;
+}
+.prop-color-10 {
+  color: @color-10 !important;
+}
+.prop-color-white {
+  color: @color-white !important;
+}
+.prop-color-black {
+  color: @color-black !important;
+}
+
+.prop-bg-color-01 {
+  background-color: @color-01 !important;
+}
+.prop-bg-color-02 {
+  background-color: @color-02 !important;
+}
+.prop-bg-color-03 {
+  background-color: @color-03 !important;
+}
+.prop-bg-color-04 {
+  background-color: @color-04 !important;
+}
+.prop-bg-color-05 {
+  background-color: @color-05 !important;
+}
+.prop-bg-color-06 {
+  background-color: @color-06 !important;
+}
+.prop-bg-color-07 {
+  background-color: @color-07 !important;
+}
+.prop-bg-color-08 {
+  background-color: @color-08 !important;
+}
+.prop-bg-color-09 {
+  background-color: @color-09 !important;
+}
+.prop-bg-color-10 {
+  background-color: @color-10 !important;
+}
+
+.prop-bg-color-white {
+  background-color: @color-white !important;
+}
+.prop-bg-color-black {
+  background-color: @color-black !important;
+}
+.prop-bg-fixed {
+  background-attachment: fixed;
+}
+
+.prop-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prop-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.prop-flex-align-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.prop-flex-align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.prop-flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.prop-flex-justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.prop-flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prop-flex-baseline {
+  .row-wrap {
+    align-items: baseline;
+  }
+}
+
+.prop-column-reverse {
+  .row-wrap {
+    @media (max-width: @tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.prop-row-reverse {
+  .row-wrap {
+    @media (max-width: @tablet) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.prop-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

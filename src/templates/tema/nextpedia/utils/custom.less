@@ -1,0 +1,161 @@
+.custom-bg-mouse::before {
+  position: absolute;
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  bottom: 1rem;
+  left: 50%;
+  margin-left: -2rem;
+  background: url("../../assets/img/mouse.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (max-width: @tablet) {
+    display: none;
+  }
+}
+
+.custom-highlighted {
+  &.custom-highlighted-slider {
+    .wrapper {
+      padding: 2rem 0.5rem;
+
+      @media (max-width: @tablet) {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .wrapper {
+    background-color: @color-06;
+    padding: 4rem 2rem !important;
+    border-radius: 0.4rem;
+
+    @media (max-width: @tablet) {
+      padding: 2rem !important;
+    }
+
+    .row-wrap {
+      min-height: auto;
+    }
+
+    .slider {
+      background-color: transparent;
+      margin: 0;
+      border: solid transparent 0rem;
+
+      .row-wrap {
+        padding: 1rem;
+      }
+
+      .col {
+        padding: 0 1.7rem;
+      }
+    }
+
+    .col-full {
+      width: 100%;
+    }
+  }
+
+  &.custom-highlighted-01 {
+    .wrapper {
+      background-color: fade(@color-01, 90%) !important;
+    }
+  }
+
+  &.custom-highlighted-02 {
+    .wrapper {
+      background-color: fade(@color-02, 90%) !important;
+    }
+  }
+
+  &.custom-highlighted-03 {
+    .wrapper {
+      background-color: fade(@color-03, 90%) !important;
+    }
+  }
+
+  &.custom-highlighted-04 {
+    .wrapper {
+      background-color: fade(@color-04, 90%) !important;
+    }
+  }
+
+  &.custom-highlighted-05 {
+    .wrapper {
+      background-color: fade(@color-05, 90%) !important;
+    }
+  }
+
+  &.custom-highlighted-06 {
+    .wrapper {
+      background-color: fade(@color-06, 90%) !important;
+    }
+  }
+
+  &.custom-highlighted-07 {
+    .wrapper {
+      background-color: fade(@color-07, 90%) !important;
+    }
+  }
+
+  &.custom-highlighted-08 {
+    .wrapper {
+      background-color: fade(@color-08, 90%) !important;
+    }
+  }
+}
+
+.custom-line-aspa {
+  .line-minor {
+    z-index: 2;
+  }
+  .line-major::before {
+    position: absolute;
+    content: "";
+    width: 7rem;
+    height: 7rem;
+    top: -2rem;
+    left: -5rem;
+    background: url("../../assets/img/aspa.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+    @media (max-width: @mobile) {
+      display: none;
+    }
+  }
+}
+
+.custom-text-01 {
+  margin-top: 0 !important;
+  font-weight: 300 !important;
+}
+
+.custom-line-08 {
+  background-color: @color-08;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.custom-col-01 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    width: 40% !important;
+
+    @media (max-width: @tablet) {
+      width: 80% !important;
+    }
+
+    .container-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

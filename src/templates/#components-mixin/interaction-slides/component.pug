@@ -1,0 +1,16 @@
+mixin interaction-slides(container)
+
+  - var idSlide =(container.idSlide) ? container.idSlide : '';
+  - var classSlider = (container.class) ? container.class : idSlide
+  - var classSliderCurrent = "owl-carousel owl-theme parent-inside-col " + classSlider   
+  .slider(class!=classSliderCurrent, 
+          show!=container.show,
+          loop!=container.loop,
+          nav!=container.nav,
+          dots!=container.dots,
+          margin!=container.margin,
+          center!=container.center,
+          )&attributes((container.attr) ? container.attr : '')
+    each slide in container.slides
+      .owl-item-container
+        +control-wildcard(slide)

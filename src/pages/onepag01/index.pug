@@ -1,0 +1,1559 @@
+extends ../../templates/page/page-base.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	body(prev-hide, next-hide, header-hide , scorm-complete='#complete-tela')
+	.onePage
+		section.full-H
+				+template-wildcard({
+					bg: 'bg01.png',
+					class: 'custom-bg-mouse prop-bg-fixed',
+          column01:[],
+          column02: [
+            {
+              type: 'class',
+              resource: 'prop-pt1 prop-pb1 custom-highlighted custom-highlighted-01 wow-up'
+            },
+            {
+              type: 'image',
+              resource: {
+                src: 'logo_white.svg',
+                class: 'prop-w-porc50 prop-pb1',
+                alt: ''
+              }
+            },
+            {
+              type: 'title',
+              resource: {
+                content: 'LOREM IPSUM DOLOR SIT AMET',
+                class: 'prop-color-06'
+              }
+            },
+            {
+              type: 'text',
+              resource: {
+                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+                class: 'prop-color-white'
+              }
+            },
+          ],
+				})
+		section.prop-pt5.prop-pb5
+			+template-wildcard({
+				class: '',
+				columns: [
+					{
+						col:[
+							{
+								type: 'class',
+								resource: ''
+							},
+							{
+								type: 'title',
+								resource: {
+									content: `
+										LOREM IPSUM DOLOR SIT AMET
+										`,
+									class: 'wow_up prop-color-02'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim euismod ullamcorper. Sed sed venenatis tortor. Nam eu efficitur libero. Quisque id tellus dolor. Cras non sem est. <span class="highlighter">Quisque malesuada, nibh in consequat varius, libero dolor efficitur sapien, et sollicitudin nibh orci vel nulla</span>. Aenean ac maximus magna.
+										`,
+									class: 'wow_up'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+									Ut vel elit quis nulla tincidunt blandit. Aenean at laoreet lacus, vel sodales orci. Donec leo dolor, rhoncus vitae varius tincidunt, sagittis ac sapien. <span class="highlighter">Duis justo sapien, fermentum luctus purus at, euismod ornare neque</span>. Aliquam neque turpis, tempus vel sapien vel, posuere vestibulum turpis. Nunc varius, massa non lobortis pulvinar, ex velit commodo tortor, ut viverra ligula turpis quis augue. Quisque id lectus quis enim porta ultricies. Fusce a nisl non ligula rhoncus blandit. Sed eget risus vehicula, lacinia quam sed, laoreet leo. Morbi interdum venenatis malesuada.
+										`,
+									class: 'wow_up'
+								}
+							},
+							{
+								type: 'line',
+								class: 'wow_up prop-mt1 custom-line-aspa',
+								resource: [
+									{
+										fraction: 'minor',
+										content:[
+											{
+												type: 'image',
+												resource: {
+													src: 'avatar1.png',
+													class: '',
+													alt: ''
+												}
+											}
+										]
+									},
+									{
+										fraction: 'major',
+										content:[
+											{
+												type: 'text',
+												resource: {
+													content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+													class: ''
+												}
+											},
+											{
+												type: 'text',
+												resource: {
+													content: 'Lorem ipsum',
+													class: 'prop-txt-bold prop-color-01'
+												}
+											},
+											{
+												type: 'text',
+												resource: {
+													content: 'Xxxxxxxxx',
+													class: 'custom-text-01'
+												}
+											}
+										]
+									},
+
+								]
+							}
+						],
+					}
+				]
+		})
+
+		section.prop-pt5.prop-pb5
+			+template-wildcard({
+				columns:[
+					{
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congu. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat. Quisque ullamcorper nibh tellus, ac interdum metus facilisis ultricies. In aliquam purus sem, in eleifend felis blandit at. Proin maximus erat risus. Aenean gravida rhoncus diam.
+									`,
+									class: ""
+								}
+							},
+						]
+					},
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congu. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat. Quisque ullamcorper nibh tellus, ac interdum metus facilisis ultricies. In aliquam purus sem, in eleifend felis blandit at. Proin maximus erat risus. Aenean gravida rhoncus diam.
+									`,
+									class: ""
+								}
+							},
+						],
+					}
+				]
+			})
+
+		section.prop-pt5.prop-pb5
+			+template-wildcard({
+				columns:[
+					{
+						type: '01-30',
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congu. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat. Quisque ullamcorper nibh tellus, ac interdum metus facilisis ultricies. In aliquam purus sem, in eleifend felis blandit at. Proin maximus erat risus. Aenean gravida rhoncus diam.
+									`,
+									class: ""
+								}
+							},
+						]
+					},
+					{
+						type: '02-70',
+						col:[
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congu. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat. Quisque ullamcorper nibh tellus, ac interdum metus facilisis ultricies. In aliquam purus sem, in eleifend felis blandit at. Proin maximus erat risus. Aenean gravida rhoncus diam.
+									`,
+									class: ""
+								}
+							},
+						],
+					}
+				]
+			})
+
+		section.prop-pt5.prop-pb5.prop-bg-color-07
+			+template-wildcard({
+				columns:[
+					{
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'title',
+								resource: {
+									content: `
+										LOREM IPSUM DOLOR SIT AMET
+										`,
+									class: 'prop-color-02'
+								}
+							},
+							{
+								type: 'subtitle',
+								resource: {
+									content: `
+										LOREM IPSUM DOLOR SIT AMET
+										`,
+									class: 'prop-color-01'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congu. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat. Quisque ullamcorper nibh tellus, ac interdum metus facilisis ultricies. In aliquam purus sem, in eleifend felis blandit at. Proin maximus erat risus. Aenean gravida rhoncus diam.
+									`,
+									class: ""
+								}
+							},
+						]
+					},
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+									type: 'guide',
+									resource: {
+											class: '',
+											content: [
+												{
+													type: 'image',
+													resource: {
+														src: 'mouse2.svg',
+														class: '',
+														alt: ''
+													}
+												},
+												{
+													type: 'text',
+													resource: {
+														content: `
+															<b>Clique</b> nos ícones para saber mais
+														`,
+														class: "prop-color-01"
+													}
+												},
+											]
+									}
+							},
+							{
+								type: 'video',
+								resource: {
+									attr:{
+										controls:true
+									},
+									src: 'pag_07.mp4',
+									class: '',
+									alt: ''
+								}
+							},
+						],
+					}
+				]
+			})
+
+		section.prop-pt5
+			+template-wildcard({
+
+				columns:[
+					{
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'slides',
+								resource:{
+										class: '',
+										slides: [
+											{
+												columns:[
+													{
+														col:[
+																{
+																	type: 'guide',
+																	resource: {
+																			class: 'prop-pb2',
+																			content: [
+																				{
+																					type: 'image',
+																					resource: {
+																						src: 'mouse2.svg',
+																						class: '',
+																						alt: ''
+																					}
+																				},
+																				{
+																					type: 'text',
+																					resource: {
+																						content: `
+																							<b>Instrução de clique</b>, manter sempre no topo
+																						`,
+																						class: "prop-color-01"
+																					}
+																				},
+																			]
+																	}
+															},
+															{
+																		type: 'title',
+																		resource: {
+																				content: '1 Lorem ipsum',
+																				class: 'prop-color-05'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													},
+													{
+														col:[
+																{
+																	type: 'guide',
+																	resource: {
+																			class: 'prop-pb2',
+																			content: [
+																				{
+																					type: 'image',
+																					resource: {
+																						src: 'mouse2.svg',
+																						class: '',
+																						alt: ''
+																					}
+																				},
+																				{
+																					type: 'text',
+																					resource: {
+																						content: `
+																							<b>Instrução de clique</b>, manter sempre no topo
+																						`,
+																						class: "prop-color-01"
+																					}
+																				},
+																			]
+																	}
+															},
+															{
+																		type: 'title',
+																		resource: {
+																				content: '1 Lorem ipsum',
+																				class: 'prop-color-05'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+											{
+												columns:[
+													{
+														col:[
+															{
+																		type: 'title',
+																		resource: {
+																				content: '2 Lorem ipsum',
+																				class: 'prop-color-02'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+											{
+												columns:[
+													{
+														col:[
+															{
+																		type: 'title',
+																		resource: {
+																				content: '3 Lorem ipsum',
+																				class: 'prop-color-01'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+										]
+								}
+							}
+						]
+					},
+				]
+			})
+
+		section.prop-pt5.prop-pb5
+			+template-wildcard({
+
+				columns:[
+					{
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'slides',
+								resource:{
+										class: '',
+										slides: [
+											{
+												columns:[
+													{
+														col:[
+																{
+																	type: 'guide',
+																	resource: {
+																			class: 'prop-pb2',
+																			content: [
+																				{
+																					type: 'image',
+																					resource: {
+																						src: 'mouse2.svg',
+																						class: '',
+																						alt: ''
+																					}
+																				},
+																				{
+																					type: 'text',
+																					resource: {
+																						content: `
+																							<b>Instrução de clique</b>, manter sempre no topo
+																						`,
+																						class: "prop-color-01"
+																					}
+																				},
+																			]
+																	}
+															},
+															{
+																		type: 'title',
+																		resource: {
+																				content: '1 Lorem ipsum',
+																				class: 'prop-color-05'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+											{
+												columns:[
+													{
+														col:[
+															{
+																		type: 'title',
+																		resource: {
+																				content: '2 Lorem ipsum',
+																				class: 'prop-color-02'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+											{
+												columns:[
+													{
+														col:[
+															{
+																		type: 'title',
+																		resource: {
+																				content: '3 Lorem ipsum',
+																				class: 'prop-color-01'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+										]
+								}
+							}
+						]
+					},
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'subtitle',
+								resource: {
+									content: `
+										LOREM IPSUM DOLOR SIT AMET
+										`,
+									class: 'prop-color-01'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congu. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat. Quisque ullamcorper nibh tellus, ac interdum metus facilisis ultricies. In aliquam purus sem, in eleifend felis blandit at. Proin maximus erat risus. Aenean gravida rhoncus diam.
+									`,
+									class: ""
+								}
+							},
+						],
+					}
+				]
+			})
+
+		section.prop-bg-color-02.wow_up
+			+template-wildcard({
+				columns:[
+          {
+						type: 'wide',
+						col:[
+							{
+								type: 'class',
+								resource: ''
+							},
+							{
+								type: 'image',
+								resource: {
+									src: 'bg02.png',
+									class: '',
+									alt: ''
+								}
+							},
+						]
+					},
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'prop-pt5 prop-pb5'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										<b>Sed eleifend justo quis mauris pretium condimentum.</b>
+									`,
+									class: "prop-color-06"
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										<span class="highlighter prop-bg-color-06 prop-color-03">Sed eleifend justo quis mauris pretium condimentum</span>. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congue. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat.
+									`,
+									class: "prop-color-white prop-pt2"
+								}
+							},
+						],
+					},
+
+				]
+			})
+
+		section.full-H.wow_up
+			+template-wildcard({
+				columns: [
+					{
+						col:[
+							{
+								type: 'class',
+								resource: ''
+							},
+							{
+								type: 'title',
+								resource: {
+									content: 'LOREM IPSUM DOLOR SIT AMET',
+									class: 'prop-color-02'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+									class: ''
+								}
+							},
+						],
+					},
+          {
+						col:[
+							{
+								type: 'background',
+								resource: {
+									src: 'bg7.png',
+									class: '',
+									alt: ''
+								}
+							},
+						],
+					}
+				]
+			})
+
+		section.full-H.wow_up
+			+template-wildcard({
+				columns: [
+					{
+            type:"01-40",
+						col:[
+							{
+								type: 'background',
+								resource: {
+									src: 'bg7.png',
+									class: '',
+									alt: ''
+								}
+							},
+						],
+					},
+					{
+            type:"02-60",
+						col:[
+							{
+								type: 'class',
+								resource: ''
+							},
+							{
+								type: 'title',
+								resource: {
+									content: 'LOREM IPSUM DOLOR SIT AMET',
+									class: 'prop-color-02'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+									class: ''
+								}
+							},
+							{
+								type: 'button',
+								resource: {
+									alt: 'saiba mais',
+									activeModal: '#modal02',
+									class: 'pulse btn-padrao',
+									content: [
+										{
+											type: 'text',
+											resource: {
+												content: 'SAIBA MAIS'
+											}
+										},
+									]
+								}
+							},
+						],
+					}
+				]
+			})
+
+			+modal('modal02', 'modal')
+				+template-wildcard({
+					column01:[
+						{
+								type: 'slides',
+								resource:{
+										class: '',
+										slides: [
+											{
+												columns:[
+													{
+														col:[
+															{
+																type: 'title',
+																resource: {
+																		content: '1 Lorem ipsum',
+																		class: 'prop-color-05'
+																}
+															},
+															{
+																type: 'text',
+																resource: {
+																	content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																	class: ''
+																}
+															}
+														]
+													},
+												]
+											},
+											{
+												columns:[
+													{
+														col:[
+															{
+																type: 'title',
+																resource: {
+																		content: '2 Lorem ipsum',
+																		class: 'prop-color-02'
+																}
+															},
+															{
+																type: 'text',
+																resource: {
+																	content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod.',
+																	class: ''
+																}
+															}
+														]
+													}
+												]
+											},
+											{
+												columns:[
+													{
+														col:[
+															{
+																type: 'title',
+																resource: {
+																		content: '3 Lorem ipsum',
+																		class: 'prop-color-01'
+																}
+															},
+															{
+																type: 'text',
+																resource: {
+																	content: 'Lorem ipsum dolor sit amet, <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																	class: ''
+																}
+															}
+														]
+													}
+												]
+											},
+										]
+								}
+							}
+					],
+				})
+
+		section.prop-pt5.prop-pb5
+			+template-wildcard({
+
+				columns:[
+					{
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'title',
+								resource: {
+									content: `
+										LOREM IPSUM DOLOR SIT AMET
+										`,
+									class: 'prop-color-02'
+								}
+							},
+							{
+								type: 'subTitle',
+								resource: {
+									content: `
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia
+										`,
+									class: 'prop-color-01 prop-txt-up'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam.
+										`,
+									class: 'prop-mt2'
+								}
+							},
+							{
+								type: 'list',
+								resource: [
+									{
+										type: 'card',
+										resource: {
+											class: 'prop-w-porc30 prop-tablet-w-porc100 prop-tablet-mt2',
+											content: [
+												{
+													type: 'image',
+													resource: {
+														src: 'card1.png',
+														class: '',
+														alt: ''
+													}
+												},
+												{
+													type: 'text',
+													resource: {
+														content: 'Lorem ipsum dolor.',
+														class: 'prop-txt-bold prop-color-01 prop-txt-center prop-pt2'
+													}
+												},
+												{
+													type: 'text',
+													resource: {
+														content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+														class: 'prop-txt-center prop-pb2'
+													}
+												},
+											]
+										}
+									},
+									{
+										type: 'card',
+										resource: {
+											class: 'prop-w-porc30 prop-tablet-w-porc100 prop-tablet-mt2',
+											content: [
+												{
+													type: 'image',
+													resource: {
+														src: 'card1.png',
+														class: '',
+														alt: ''
+													}
+												},
+												{
+													type: 'text',
+													resource: {
+														content: 'Lorem ipsum dolor.',
+														class: 'prop-txt-bold prop-color-01 prop-txt-center prop-pt2'
+													}
+												},
+												{
+													type: 'text',
+													resource: {
+														content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+														class: 'prop-txt-center prop-pb2'
+													}
+												},
+											]
+										}
+									},
+									{
+										type: 'card',
+										resource: {
+											class: 'prop-w-porc30 prop-tablet-w-porc100 prop-tablet-mt2',
+											content: [
+												{
+													type: 'image',
+													resource: {
+														src: 'card1.png',
+														class: '',
+														alt: ''
+													}
+												},
+												{
+													type: 'text',
+													resource: {
+														content: 'Lorem ipsum dolor.',
+														class: 'prop-txt-bold prop-color-01 prop-txt-center prop-pt2'
+													}
+												},
+												{
+													type: 'text',
+													resource: {
+														content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+														class: 'prop-txt-center prop-pb2'
+													}
+												},
+											]
+										}
+									},
+								]
+							},
+						]
+					}
+				]
+			})
+
+		section.prop-pt5.prop-pb5.prop-bg-color-08
+			+template-wildcard({
+				class: '',
+				columns:[
+					{
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'title',
+								resource: {
+									content: `
+										LOREM IPSUM DOLOR SIT AMET
+										`,
+									class: 'prop-color-02'
+								}
+							},
+							{
+								type: 'guide',
+								resource: {
+										class: 'prop-pb2',
+										content: [
+											{
+												type: 'image',
+												resource: {
+													src: 'mouse2.svg',
+													class: '',
+													alt: ''
+												}
+											},
+											{
+												type: 'text',
+												resource: {
+													content: `
+														<b>Instrução de clique</b>, manter sempre no topo
+													`,
+													class: "prop-color-01"
+												}
+											},
+										]
+								}
+							},
+							{
+								type: 'slides',
+								resource:{
+										show:3,
+										loop:true,
+										class: '',
+										slides: [
+											{
+												row:{
+													class: 'prop-bg-color-white'
+												},
+												columns:[
+													{
+														col:[
+															{
+																		type: 'title',
+																		resource: {
+																				content: '1 Lorem ipsum',
+																				class: 'prop-color-05'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+											{
+												row:{
+													class: 'prop-bg-color-white'
+												},
+												columns:[
+													{
+														col:[
+															{
+																		type: 'title',
+																		resource: {
+																				content: '2 Lorem ipsum',
+																				class: 'prop-color-02'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Sed eleifend justo quis mauris pretium condimentum. <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+											{
+												row:{
+													class: 'prop-bg-color-white'
+												},
+												columns:[
+													{
+														col:[
+															{
+																		type: 'title',
+																		resource: {
+																				content: '3 Lorem ipsum',
+																				class: 'prop-color-01'
+																		}
+															},
+															{
+																	type: 'text',
+																	resource: {
+																		content: 'Lorem ipsum dolor sit amet, <span class="highlighter">Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diame</span>. Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod.',
+																		class: ''
+																	}
+															}
+														]
+													}
+												]
+											},
+										]
+								}
+							}
+						]
+					},
+				]
+			})
+
+		section.prop-bg-color-01.wow_up
+			+template-wildcard({
+				columns:[
+					{
+						type: 'full',
+						col:[
+							{
+								type: 'class',
+								resource: 'prop-mih-vh50'
+							},
+							{
+								type: 'title',
+								resource: {
+										content: 'LOREM IPSUM DOLOR SIT AMET',
+										class: 'prop-color-white'
+								}
+							},
+							{
+								type: 'background',
+								resource: {
+									src: 'bg03.png',
+									class: '',
+									alt: ''
+								}
+							},
+						]
+					},
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'prop-pt5 prop-pb5 prop-mih-vh50'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										<b>Sed eleifend justo quis mauris pretium condimentum.</b>
+									`,
+									class: "prop-color-06"
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Sed eleifend justo quis mauris pretium condimentum. Nam efficitur, nisl quis ullamcorper condimentum, elit ex tempor ante, a interdum sapien urna et diam. Curabitur euismod orci accumsan neque egestas, nec pellentesque turpis congue. Sed tempus libero sit amet orci bibendum, a pretium nunc consequat.
+									`,
+									class: "prop-color-white prop-pt2"
+								}
+							},
+						],
+					},
+				]
+			})
+
+		section.prop-pt5.prop-pb1
+			+template-wildcard({
+				columns:[
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										<span class="highlighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim euismod ullamcorper. Sed sed venenatis tortor. Nam eu efficitur libero. Quisque id tellus dolor. Cras non sem est. Quisque malesuada, nibh in consequat varius</span>. Libero dolor efficitur sapien, et sollicitudin nibh orci vel nulla.
+									`,
+									class: ''
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Ut vel elit quis nulla tincidunt blandit. Aenean at laoreet lacus, vel sodales orci. Donec leo dolor, rhoncus vitae varius tincidunt, sagittis ac sapien. Duis justo sapien, fermentum luctus purus at, euismod ornare neque. Aliquam neque turpis, tempus vel sapien vel, posuere vestibulum turpis. Nunc varius, massa non lobortis pulvinar, ex velit commodo tortor, ut viverra ligula turpis quis augue. Quisque id lectus quis enim porta ultricies. Fusce a nisl non ligula rhoncus blandit. Sed eget risus vehicula, lacinia quam sed, laoreet leo. Morbi interdum venenatis malesuada.
+									`,
+									class: ''
+								}
+							},
+							{
+									type: 'accordeon',
+									class: '',
+									resource: [
+											{
+													title: {
+															content: 'Titulo 01',
+															class: ''
+													},
+													body: {
+
+															columns:[
+																{
+																	col:[
+																			{
+																					type: 'subtitle',
+																					resource: {
+																							content: 'Lorem ipsum dolor sit amet',
+																							class: 'prop-color-01'
+																					}
+																			},
+																			{
+																					type: 'text',
+																					resource: {
+																							content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <span class="highlighter">quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</span> Duis',
+																							class: ''
+																					}
+																			}
+																	],
+																},
+																{
+																	col: [
+																			{
+																					type: 'image',
+																					resource: {
+																							src: 'imageFake.png',
+																							class: '',
+																							alt: 'imagem'
+																					}
+																			}
+																	],
+																}
+															]
+													}
+											},
+											{
+													title: {
+															content: 'Titulo 02',
+															class: ''
+													},
+													body: {
+
+															columns:[
+																{
+																	col:[
+																			{
+																					type: 'subtitle',
+																					resource: {
+																							content: 'Lorem ipsum dolor sit amet',
+																							class: 'prop-color-02'
+																					}
+																			},
+																			{
+																					type: 'text',
+																					resource: {
+																							content: '<span class="highlighter">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</span> ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis',
+																							class: ''
+																					}
+																			}
+																	],
+																}
+															]
+													}
+											},
+									]
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										Ut vel elit quis nulla tincidunt blandit. Aenean at laoreet lacus, vel sodales orci. Donec leo dolor, rhoncus vitae varius tincidunt, sagittis ac sapien. Duis justo sapien, fermentum luctus purus at, euismod ornare neque.
+									`,
+									class: 'prop-pt1'
+								}
+							},
+						],
+					},
+				]
+			})
+
+		section.prop-pb5
+			+template-wildcard({
+				class:'',
+				columns:[
+					{
+						col: [
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+									<p>
+										<span class="highlighter">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</span> ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
+									</p>
+									<p>
+										<b>Ut wisi enim ad minim veniam?</b>
+									</p>
+									`,
+									class: ''
+								}
+							},
+						]
+					},
+					{
+						col: [
+							{
+									type: 'accordeon',
+									class: 'wow_up',
+									resource: [
+											{
+													title: {
+															content: 'Titulo 01',
+															class: ''
+													},
+													body: {
+
+															columns:[
+																{
+																	col:[
+																			{
+																					type: 'subtitle',
+																					resource: {
+																							content: 'Lorem ipsum dolor sit amet',
+																							class: 'prop-color-01'
+																					}
+																			},
+																			{
+																					type: 'text',
+																					resource: {
+																							content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, <span class="highlighter">quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</span> Duis',
+																							class: ''
+																					}
+																			}
+																	],
+																},
+															]
+													}
+											},
+											{
+													title: {
+															content: 'Titulo 02',
+															class: ''
+													},
+													body: {
+
+															columns:[
+																{
+																	col:[
+																			{
+																					type: 'subtitle',
+																					resource: {
+																							content: 'Lorem ipsum dolor sit amet',
+																							class: 'prop-color-02'
+																					}
+																			},
+																			{
+																					type: 'text',
+																					resource: {
+																							content: '<span class="highlighter">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</span> ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis',
+																							class: ''
+																					}
+																			}
+																	],
+																}
+															]
+													}
+											},
+									]
+							},
+						],
+					},
+				]
+			})
+		section.full-H
+			+template-wildcard({
+				bg: 'bg5.png',
+				class: 'prop-bg-fixed',
+				columns: [
+					{
+						col:[],
+					},
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'prop-pt1 prop-pb1 custom-highlighted custom-highlighted-02 wow-up'
+							},
+							{
+								type: 'title',
+								resource: {
+									content: 'LOREM IPSUM DOLOR SIT AMET',
+									class: 'prop-color-06'
+								}
+							},
+							{
+								type: 'text',
+								resource: {
+									content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+									class: 'prop-color-white'
+								}
+							},
+							{
+								type: 'button',
+								resource: {
+									alt: 'saiba mais',
+									activeModal: '#modal01',
+									class: 'pulse btn-padrao',
+									content: [
+										{
+											type: 'text',
+											resource: {
+												content: 'SAIBA MAIS'
+											}
+										},
+									]
+								}
+							},
+						],
+					}
+				]
+			})
+
+			+modal('modal01', 'modal')
+				+template-wildcard({
+					column01:[
+						{
+							type: 'line',
+							resource: [
+								{
+									fraction: 'major',
+									content:[
+										{
+											type: 'title',
+											resource: {
+												content: 'LOREM IPSUM DOLOR SIT AMET',
+												class: 'prop-color-06'
+											}
+										},
+										{
+											type: 'text',
+											resource: {
+												content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+												class: ''
+											}
+										},
+									]
+								},
+								{
+									fraction: 'minor',
+									content: [
+										{
+											type: 'image',
+											resource: {
+												src: 'imageFake5.png',
+												class: '',
+												alt: ''
+											}
+										},
+										{
+											type: 'subtext',
+											resource: {
+												content: 'Lorem ipsum dolor sit amet',
+												class: 'prop-mt1'
+											}
+										},
+									]
+								}
+							]
+						}
+					],
+				})
+
+		section.prop-pt5.prop-pb5
+			+template-wildcard({
+				columns:[
+					{
+						col:[
+							{
+								type: 'class',
+								resource: 'wow_up'
+							},
+							{
+								type: 'text',
+								resource: {
+									content: `
+										<span class="highlighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim euismod ullamcorper. Sed sed venenatis tortor. Nam eu efficitur libero. Quisque id tellus dolor. Cras non sem est. Quisque malesuada, nibh in consequat varius</span>. Libero dolor efficitur sapien, et sollicitudin nibh orci vel nulla.
+									`,
+									class: ''
+								}
+							},
+						],
+					},
+					{
+						col:[
+							{
+								type: 'line',
+								class: 'wow_up prop-mt2 custom-line-08 prop-flex-align-start',
+								resource: [
+									{
+										fraction: 'minor',
+										content:[
+											{
+												type: 'image',
+												resource: {
+													src: 'imageFake3.png',
+													class: '',
+													alt: ''
+												}
+											}
+										]
+									},
+									{
+										fraction: 'major',
+										content:[
+											{
+												type: 'title',
+												resource: {
+													content: 'LOREM IPSUM DOLOR SIT AMET',
+													class: 'prop-color-04'
+												}
+											},
+											{
+												type: 'text',
+												resource: {
+													content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+													class: ''
+												}
+											}
+										]
+									},
+								]
+							}
+						]
+					}
+				]
+			})
+
+		section.prop-pt8.prop-pb8.prop-bg-color-02.wow_up#complete-tela
+			+template-wildcard({
+				columns:[
+					{
+						type: 'full',
+						col:[
+							{
+								type: 'class',
+								resource: 'custom-col-01'
+							},
+							{
+								type: 'image',
+								resource: {
+									src: 'logo_white.svg',
+									class: 'prop-w-porc30 prop-pb1',
+									alt: ''
+								}
+							},
+							{
+								type: 'subtext',
+								resource: {
+									content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi sed enim lacinia egestas nec quis leo.',
+									class: 'prop-color-white prop-txt-center'
+								}
+							},
+						]
+					},
+				]
+			})
+
+
+block scripts
+	script(src="script.js")

@@ -1,0 +1,74 @@
+include ../../../flamboyant_modules/templates/import.pug
+include mixins/index.pug
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		
+		+linkStyles('reset.css')
+		+linkStyles('animate.min.css')
+		block styles
+
+	body
+		+template-header({
+			id:'header',
+			class:'fixedHeader',
+			data:[
+				{
+					type: 'image',
+					resource: {
+					src: 'logo.svg',
+					class: 'logo prop-ml1',
+					alt: ''
+					}
+				},
+				{
+					type: 'menu-list',
+					resource: [
+						{
+							navSections:{
+								"id":'',
+								"link": '',
+								'class': '',
+								'content': 'LOREN IPSUM'
+							}
+						},
+						{
+							navSections:{
+								"id":'',
+								"link": '',
+								'class': '',
+								'content': 'LOREN IPSUM'
+							}
+						},
+						{
+							navSections:{
+								"id":'',
+								"link": '',
+								'class': '',
+								'content': 'LOREN IPSUM'
+							}
+						},
+						{
+							navSections:{
+								"id":'',
+								"link": '',
+								'class': '',
+								'content': 'LOREN IPSUM'
+							}
+						}
+					]
+				}
+			]
+		})
+		
+		+interaction-arrows({position: 'bottom'})
+		block body
+
+	+scriptScripts('jquery.min.js')
+	+scriptScripts('components.mixin.scripts.js')
+	+scriptScripts('page.js')
+	block scripts
