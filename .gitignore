@@ -2,8 +2,6 @@ node_modules
 flamboyant_modules
 package-lock.json
 scorm
-dist
-dist/*
 sys/automation/*
 *.zip
 *.doc*
