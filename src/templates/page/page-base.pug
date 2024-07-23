@@ -7,65 +7,71 @@ html
 		meta(charset="utf-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		
+
 		+linkStyles('reset.css')
 		+linkStyles('animate.min.css')
 		block styles
 
 	body
 		+template-header({
-			id:'header',
-			class:'fixedHeader',
-			data:[
-				{
-					type: 'image',
-					resource: {
-					src: 'logo.svg',
-					class: 'logo prop-ml1',
-					alt: ''
-					}
-				},
-				{
-					type: 'menu-list',
-					resource: [
-						{
-							navSections:{
-								"id":'',
-								"link": '',
-								'class': '',
-								'content': 'LOREN IPSUM'
-							}
-						},
-						{
-							navSections:{
-								"id":'',
-								"link": '',
-								'class': '',
-								'content': 'LOREN IPSUM'
-							}
-						},
-						{
-							navSections:{
-								"id":'',
-								"link": '',
-								'class': '',
-								'content': 'LOREN IPSUM'
-							}
-						},
-						{
-							navSections:{
-								"id":'',
-								"link": '',
-								'class': '',
-								'content': 'LOREN IPSUM'
-							}
-						}
-					]
-				}
-			]
-		})
-		
-		+interaction-arrows({position: 'bottom'})
+      id:'header',
+      class:'fixedHeader',
+      hamburguer: true,
+      data:[
+
+
+        {
+          type: 'list',
+          class: 'itensSuporte',
+          resource: [
+
+            {
+              type: 'link',
+              resource: {
+                alt: '',
+                target: '_blank',
+                class: 'btn-libras',
+                attr:{
+                  tabindex:-1
+                },
+                content: [
+                  {
+                    type: 'image',
+                    resource: {
+                      src: 'icon5_green.svg',
+                      class: 'custom-pointer prop-h2 prop-tablet-w2',
+                      alt: '',
+
+                    }
+                  },
+                ]
+              }
+            },
+            {
+              type: 'link',
+              resource: {
+                alt: '',
+                class: '',
+                attr:{
+                  tabindex:-1
+                },
+                content: [
+                  {
+                    type: 'image',
+                    resource: {
+                    src: 'baixa_visao.svg',
+                    class: 'acessibility_controll custom-pointer prop-h2 prop-tablet-w2',
+                    alt: 'Abrir o menu de baixa visão.',
+                    }
+                  },
+                ]
+              }
+            },
+          ]
+        },
+      ]
+    })
+
 		block body
 
 	+scriptScripts('jquery.min.js')

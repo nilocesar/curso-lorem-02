@@ -7,9 +7,9 @@ html,body{
     position: relative !important;
     // top: 0;
     background-color: @color-white !important;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    // -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    // -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    // box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
     // border-bottom: 0.05rem solid @color-05;
 
     width: 100%;
@@ -18,11 +18,25 @@ html,body{
     display: flex;
     justify-content:space-between;
     align-items: center;
-  
+
+    .container-list{
+      margin: 0 !important;
+      justify-content: flex-end !important;
+
+      .container-link{
+        cursor: pointer;
+      }
+
+      &>div {
+        width: auto !important;
+      }
+    }
+
     &.fixedHeader{
       position: fixed !important;
       top: 0;
       left:0;
+      background-color: transparent !important;
     }
 
     @media @ie11 {
@@ -37,7 +51,7 @@ html,body{
         display: none;
         color: @color-03;
     }
-      
+
     #toggle {
         display: none;
     }
@@ -48,10 +62,7 @@ html,body{
       img {
           object-fit: contain;
           height:100%;
-          width: 8rem;
-          @media (max-width: 900px) {
-            width: 4rem;
-          }
+          width: 2.5rem;
       }
     }
 
@@ -79,13 +90,13 @@ html,body{
     }
 
     @media (max-width: @mobile) {
-      
+
       label {
         display: block;
         cursor: pointer;
         z-index: 99999999;
       }
-      
+
       .container-menu-list {
         text-align: center;
         width: 100vw;
@@ -98,7 +109,7 @@ html,body{
         z-index: 9999;
         top: 0;
         left: 0;
-        background: @color-01 !important;
+        // background: @color-01 !important;
 
         a {
           color: @color-white;

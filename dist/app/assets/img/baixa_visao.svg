@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Grupo_4441" data-name="Grupo 4441" transform="translate(-751 -407)">
+    <g id="Grupo_4346" data-name="Grupo 4346">
+      <g id="AJUDA" transform="translate(751 407)">
+        <g id="BOX_CLICK" data-name="BOX CLICK">
+          <g id="Elipse_21" data-name="Elipse 21" transform="translate(40) rotate(90)" fill="none" stroke="#efe06e" stroke-width="2">
+            <circle cx="20" cy="20" r="20" stroke="none"/>
+            <circle cx="20" cy="20" r="19" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_4316" data-name="Grupo 4316" transform="translate(14472 10473)">
+        <g id="Grupo_4315" data-name="Grupo 4315" transform="translate(-13718 -10064)">
+          <g id="Elipse_36" data-name="Elipse 36" transform="translate(8 8)" fill="none" stroke="#efe06e" stroke-width="2">
+            <circle cx="9.5" cy="9.5" r="9.5" stroke="none"/>
+            <circle cx="9.5" cy="9.5" r="8.5" fill="none"/>
+          </g>
+          <path id="Interseção_1" data-name="Interseção 1" d="M10,9.5A9.368,9.368,0,0,0,.771,0C.511,0,.256.011,0,.032V18.967c.255.022.51.033.771.033A9.368,9.368,0,0,0,10,9.5Z" transform="translate(17 8)" fill="#efe06e"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

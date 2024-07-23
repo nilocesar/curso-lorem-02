@@ -2,7 +2,7 @@
 	"builder": "for-engine",
 	"dependencies": {
 			"flamboyant": {
-            "flamboyant-engine": "6.0.1",
+            "flamboyant-engine": "6.0.2",
             "flamboyant-props": "1.0.2"
         },
 
@@ -23,13 +23,17 @@
 
 			"components": {
             "control-acessibility": "",
+            "script-tools-acessibility": "",
             "control-scorm": "",
             "interaction-modal": "",
             "interaction-arrows": "",
             "interaction-progress-line": "",
-            "interaction-menu-sideview":"",
-            "interaction-sequencial-help":"",
-            "script-wow": ""
+            "interaction-menu-sideview": "",
+            "interaction-sequencial-help": "",
+            "script-wow": "",
+            "control-libras":"",
+            "script-acessibility": "",
+            "script-vlibras": ""
         }
 	}
 }
