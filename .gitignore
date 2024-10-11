@@ -5,3 +5,5 @@ scorm
 sys/automation/*
 *.zip
 *.doc*
+dist
+*dist
